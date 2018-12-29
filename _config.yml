@@ -180,11 +180,11 @@ live2d:
     vHeadPos: 0.618
   display:
     superSample: 2
-    width: 75
-    height: 150
-    position: right
+    width: 85
+    height: 170
+    position: left
     hOffset: 0
-    vOffset: -50
+    vOffset: 0
   mobile:
     show: true
     scale: 0.5
