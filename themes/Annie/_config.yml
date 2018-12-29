@@ -1,0 +1,189 @@
+# 01-header
+# menu
+menu:
+    home: /
+    archive: /archives
+    categories: /categories
+    tags: /tags
+    about: /about
+    gallery: /gallery
+
+# favicon & avtor
+# if the value of avtor is false, the 'say' is optional.
+favicon: /img/favicon.ico
+avtor: /img/logo.png
+say: Welcome 
+
+# background_image
+# /img/1.jpg
+# https://source.unsplash.com/collection/954550/1920x1080
+# https://sariay.github.io/Random-img/
+# May be cause CROS bug!
+background_image:
+    #默认配置如下：
+    #mode: normal #normal or random
+    #normal_url: /img/1.jpg
+    #random_max: 110 
+    #random_url: https://sariay.github.io/Random-img/
+    #github配置如下：
+    #enable: false 
+    #url: img/1.jpg
+    #customRadom_url: https://XXX-youname-XXX.github.io/Random-img/
+    #官方使用说明参考配置：使用固定图片，请确保参数enable为true，然后设置参数url的值
+    #enable: false
+    #url: img/1.jpg
+    #官方使用说明参考配置：使用unplash随机图片，请确保参数enable为true，然后设置参数url的值
+    #enable: true
+    #url: https://source.unsplash.com/collection/954550/1920x1080
+    #官方使用说明参考配置：使用自定义随机图片，请确保参数enable为false，然后设置参数customRadom_url的值即可
+    #enable: false
+     mode: random
+     random_max: 110
+     random_url: /img/background/
+    #random_url: https://www.ffamily.cn/Random-img/
+    #url: img/1.jpg
+    #customRadom_url: https://miracleqi.github.io/Random-img/
+    
+# show motto
+motto:
+    enable: true
+#motto: true  #来自github配置
+
+# 02-PROLOADER
+# animation: spinner, transition or cyclic
+preloader:   #github配置无此项
+    enable: true
+    animation: transition
+
+# 03-INDEX
+# index-style: pure, cart
+# 齐健：首页文章展示模式，pure为纯净模式，cart为图文模式
+index_style: cart
+
+# index_cart_cover
+cover: /img/cart_cover.jpg
+
+# 此处设置来自 https://sariay.github.io/2018/08/27/Annie%E4%B8%BB%E9%A2%98%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 5
+  order_by: -date
+
+#page
+page_name:        #来自github配置
+    enable: true  #来自github配置
+
+# 04-POST
+# post_relate
+relate: #github配置无此项
+    enable: true
+    posts_limit: 10
+    posts_excerpt: 120
+
+# post_comment
+comment:
+    enable: true
+
+gitalk:  # 在github上创建了Oauth 应用
+    enable: true
+    clientID: '1c4a9c51912861df1489' 
+    clientSecret: 'de2039c0832657f5fa14b8fca2a8e45e0f82fdba' 
+    repo: Blog-Comment-Repo # Hexo-Gitalk
+    owner: miracleqi 
+    admin: miracleqi 
+    distractionFreeMode: true
+    #去除 more、index.html、?query=123等格式尾部 
+    hrefTrimend: '#.*$,\\?.*$,index.html$' 
+    
+valine: 
+    enable: false
+    appid: 'DU--'
+    appkey: 'DU--'
+    placeholder: no any!
+    
+livere: #github配置无此项
+    enable: false
+    livere_uid: 'sdd'
+    
+# post_count
+leancloud_count: #github配置无此项
+    enable: true
+    appid: 'flQVrCRla4H5iIfSkVBHzKbn-gzGzoHsz'
+    appkey: 'KjVRLD07OiS38ChDcQ2QPfcs'
+    like_post:
+        enable: true
+    visit_post:
+        enable: true
+    topN_post: 
+        enable: true #param1 for topN_post
+        limit: 10 #param2 for topN_post
+busuanzi_count: #github配置无此项
+    enable: true
+
+# post_toc
+post_toc:
+    enable: true
+    katelog: true
+   #number: false  #来自github配置
+   #title: 文章目录  #来自github配置
+    
+# post_mathJax
+mathjax: #github配置无此项
+  enable: false
+  
+# post_code
+code_copy: #github配置无此项
+    enable: false
+
+# post_excerpt for index page
+excerpt_cart: 80    #github配置无此项
+excerpt_pure: 300   #github配置无此项
+excerpt_link: true  #展开全文
+
+# 05-FOOTER
+# social
+social:
+    enable: true
+    github: https://github.com/miracleqi
+    weibo: http://github.com/
+    email: mailto:290557551@qq.com
+    qq: http://290557551
+    twitter: http://github.com/
+
+# copyright  
+since: 2018
+cotent_author: MiracleQi
+
+# 06-OTHERS
+# rss
+rss: /atom.xml
+
+# gallery 
+# format: natural or square
+gallery_format: natural
+# one time to load 4 rows or other count, 0 to load img automatically when scrolling.(0,1,2,3,4,5,6......)
+gallery_limit: 0
+# data url
+gallery_data: gallery/data.json
+
+# Local search
+# Dependencies: https://github.com/flashlab/hexo-generator-search
+local_search:
+    enable: true
+    # if auto, trigger search by changing input
+    # if manual, trigger search by pressing enter key or search button
+    trigger: auto
+    # show top n results per article, show all results by setting to -1
+    top_n_per_article: 2
+
+#when click, emerge heart
+love:
+    enable: true
+
+#totop
+totop:
+    enable: true

@@ -1,0 +1,193 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 齐健的博客
+subtitle: 温柔魔君
+description: "温柔魔君，MiracleQi的主题博客。公司:上海天泰网络技术有限公司 职位: 产品经理"
+keywords: "openwaf,nginx,openresty,程序员,极客,开源,IT,Geek"
+author: MiracleQi
+email: 290557551@qq.com
+language:
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: ffamily.cn
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts 可设置为 :year-:month-:day-:title.md
+default_layout: post
+auto_spacing: false #参考官网自己加的
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: false   #litten的yilia主题为true，Sariay的Annie主题为false
+  line_number: true
+  auto_detect: false
+  tab_replace:
+  
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+  
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Archives
+# 参考litten的配置
+## 2: Enable pagination
+## 1: Disable pagination
+## 0: Fully Disable
+archive: 1
+category: 1
+tag: 1
+
+# Server
+# 参考litten的配置
+## Hexo uses Connect as a server
+## You can customize the logger format as defined in
+## http://www.senchalabs.org/connect/logger.html
+port: 4000
+server_ip: 192.168.36.17
+logger: false
+logger_format: dev
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Disqus
+# 参考litten的配置
+disqus_shortname: 
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: Annie  # yilia Annie landscape
+
+exclude_generator: # 参考litten的配置
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: https://github.com/miracleqi/miracleqi.github.io
+  branch: master
+
+# 参考litten的配置
+#deploy:
+#  type: rsync
+#  host: 120.24.181.238
+#  user: root
+#  root: /usr/local/nginx/litten.me/
+#  port: 22
+
+# 参考litten的配置
+sitemap:
+    path: sitemap.xml
+# 参考litten的配置
+baidusitemap:
+    path: baidusitemap.xm
+# 参考litten的配置
+feed:
+    type: atom
+    path: atom.xml
+    limit: 100
+# 参考litten的配置
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
+# 参考Sariay的Annie主题配置，search功能
+search:
+  path: search.json
+  zipPath: search.zip
+  versionPath: searchVersion.txt
+  field: post #field: post, page or all
+# 参考Sariay的Annie主题配置，代码高亮
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'default'
+  line_number: true    # default false
+  custom_css: 'path/to/your/custom.css'     # optional
+# hexo-admin authentification
+admin:
+  username: 温柔魔君
+  password_hash: $2a$10$EkdCdHk0wL9.CoUbLr3TTelApLBr9DS0gEYcfwk.hcoQl4MLFi1vC #密码为wei3080648
+  secret: my super secret phrase
+#live2d 齐健自己添加，hexo-helper-live2d 看板娘
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  log: false
+  model:
+    use: live2d-widget-model-haruto
+    scale: 1
+    hHeadPos: 0.5
+    vHeadPos: 0.618
+  display:
+    superSample: 2
+    width: 75
+    height: 150
+    position: right
+    hOffset: 0
+    vOffset: -50
+  mobile:
+    show: true
+    scale: 0.5
+  react:
+    opacityDefault: 0.7
+    opacityOnHover: 0.2

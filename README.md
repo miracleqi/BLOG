@@ -1,2 +1,0 @@
-# BLOG-HEXO
-BLOG-HEXO backup
