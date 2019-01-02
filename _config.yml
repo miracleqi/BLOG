@@ -7,7 +7,7 @@ title: 齐健的博客
 subtitle: 温柔魔君
 description: "温柔魔君，MiracleQi的主题博客。公司:上海天泰网络技术有限公司 职位: 产品经理"
 keywords: "openwaf,nginx,openresty,程序员,极客,开源,IT,Geek"
-author: MiracleQi
+author: MiracleQi-温柔魔君
 email: 290557551@qq.com
 language:
 timezone:
@@ -106,7 +106,8 @@ exclude_generator: # 参考litten的配置
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/miracleqi/miracleqi.github.io
+ #repo: https://github.com/miracleqi/miracleqi.github.io
+  repo: git@github.com:miracleqi/miracleqi.github.io
   branch: master
 
 # 参考litten的配置
@@ -164,6 +165,8 @@ admin:
   username: 温柔魔君
   password_hash: $2a$10$EkdCdHk0wL9.CoUbLr3TTelApLBr9DS0gEYcfwk.hcoQl4MLFi1vC #密码为wei3080648
   secret: my super secret phrase
+  deployCommand: 'e:\BLOG\admin_script\hexo-generate.bat'
+ #deployCommand: 'hexo-generate.bat'
 #live2d 齐健自己添加，hexo-helper-live2d 看板娘
 live2d:
   enable: true
