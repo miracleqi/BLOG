@@ -1,0 +1,1 @@
+./layout/_partial/header.ejs:					<a><i class="fa fa-camera-retro" onclick="changeHeaderBg()"></i>切换背景</a>

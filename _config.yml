@@ -106,8 +106,11 @@ exclude_generator: # 参考litten的配置
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
- #repo: https://github.com/miracleqi/miracleqi.github.io
-  repo: git@github.com:miracleqi/miracleqi.github.io
+  repo: 
+    github: https://github.com/miracleqi/miracleqi.github.io.git
+    gitee: https://gitee.com/miracleqi/miracleqi.git
+    coding: https://git.dev.tencent.com/m290557551/m290557551.git
+ #repo: git@github.com:miracleqi/miracleqi.github.io
   branch: master
 
 # 参考litten的配置
@@ -165,7 +168,7 @@ admin:
   username: 温柔魔君
   password_hash: $2a$10$EkdCdHk0wL9.CoUbLr3TTelApLBr9DS0gEYcfwk.hcoQl4MLFi1vC #密码为wei3080648
   secret: my super secret phrase
-  deployCommand: 'e:\BLOG\admin_script\hexo-generate.bat'
+  deployCommand: 'e:\BLOG\hexo\admin_script\hexo-generate.bat'
  #deployCommand: 'hexo-generate.bat'
 #live2d 齐健自己添加，hexo-helper-live2d 看板娘
 live2d:
